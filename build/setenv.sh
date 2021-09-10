@@ -10,6 +10,8 @@ BUILD_OUTPUT_DIR=$LOCAL_DIR/output
 DEFCONFIG_ARRAY=(
     "==========In Maintaining======================"
 
+    "bananapi_m5"
+
     "odroidn2"
     "odroidc4"
     "odroidn2_bios"

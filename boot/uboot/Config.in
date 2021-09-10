@@ -531,7 +531,8 @@ config BR2_TARGET_UBOOT_AMLOGIC
 		    && BR2_PACKAGE_AML_UBOOT_TOOLCHAIN_GCC_LINARO_ARM_NONE \
 		    && BR2_PACKAGE_AML_UBOOT_TOOLCHAIN_ARC) \
 			|| BR2_TARGET_UBOOT_ODROID_N2 \
-			|| BR2_TARGET_UBOOT_ODROID_C4
+			|| BR2_TARGET_UBOOT_ODROID_C4 \
+			|| BR2_TARGET_UBOOT_BANANAPI_M5
     select BR2_PACKAGE_HOST_AML_IMG_PACKER_NEW
     help
         amlogic uboot
@@ -590,6 +591,12 @@ config BR2_TARGET_UBOOT_ODROID_C4
     select BR2_TARGET_UBOOT_ODROID_COMMON
     help
         odroidc4 uboot
+
+config BR2_TARGET_UBOOT_BANANAPI_M5
+    bool "bananapim5 uboot"
+    select BR2_TARGET_UBOOT_ODROID_COMMON
+    help
+        bananapim5 uboot
 
 config BR2_TARGET_UBOOT_ODROID_N2
     bool "odroidn2 uboot"

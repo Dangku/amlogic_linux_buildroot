@@ -1,0 +1,13 @@
+diff --git a/arch/arm/cpu/armv8/g12a/firmware/scp_task/Makefile b/arch/arm/cpu/armv8/g12a/firmware/scp_task/Makefile
+index 6047672..8ecbf2c 100755
+--- a/arch/arm/cpu/armv8/g12a/firmware/scp_task/Makefile
++++ b/arch/arm/cpu/armv8/g12a/firmware/scp_task/Makefile
+@@ -6,7 +6,7 @@ include $(buildtree)/include/autoconf.mk
+ include $(buildtree)/.config
+ 
+ # Select ARMv7-m bare-metal toolchain
+-CROSS_COMPILE=arm-none-eabi-
++CROSS_COMPILE=/opt/toolchains/gcc-linaro-arm-none-eabi-4.8-2014.04_linux/bin/arm-none-eabi-
+ ASM=$(CROSS_COMPILE)as
+ CC=$(CROSS_COMPILE)gcc
+ CPP=$(CROSS_COMPILE)cpp
